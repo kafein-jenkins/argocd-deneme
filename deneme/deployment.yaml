@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: smartcity-be-presentation
-          image: table-alpine-perl
+          image: nginx:table-alpine-perl
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development

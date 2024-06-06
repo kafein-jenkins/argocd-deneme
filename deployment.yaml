@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartcity-be-presentation
+  namespace: dynamic-components
+  labels:
+    app: smartcity-be-presentation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smartcity-be-presentation
+  template:
+    metadata:
+      labels:
+        app: smartcity-be-presentation
+    spec:
+      containers:
+        - name: smartcity-be-presentation
+          image: registry.sampas.com.tr/commons/dev/smartcity-be-presentation:b45cec9
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+      

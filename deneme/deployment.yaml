@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: smartcity-be-presentation
-          image: registry.sampas.com.tr/commons/dev/smartcity-be-presentation:b45cec9
+          image: nginx:latest
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development

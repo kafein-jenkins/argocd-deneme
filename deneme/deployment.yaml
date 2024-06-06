@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: smartcity-be-presentation
-  namespace: dynamic-components
+  namespace: default
   labels:
     app: smartcity-be-presentation
 spec:
